@@ -1,0 +1,45 @@
+
+body{
+    
+    width:1366px;
+    margin:0 auto;   
+}
+/*顶部横条*/
+.topdiv *{
+
+    vertical-align: middle;
+}
+.font
+{
+   color: #ffffff;
+   text-decoration:none; 
+}
+a.top:link{text-decoration:none;color:#ffffff;}
+a.top:visited{color:#ffffff;}
+a.top:hover{color:rgb(27,167,151);}
+a.top:active{color:rgb(27,167,151);}
+
+/*log0部分横条*/
+.logoimg{
+    float:left;
+    display:inline;
+    padding:15px 140px 15px 140px;
+}
+.logotxt{
+    margin-top:40px;
+    float:left;
+    display:inline;
+    margin-bottom:40px;
+   
+}
+a.logo:link{text-decoration:none;color:#000000;}
+a.logo:visited{color:#000000;}
+a.logo:hover{color:rgb(27,167,151);}
+a.logo:active{color:rgb(27,167,151);}
+a.logo1:link{text-decoration:none;color:rgbrgb(27,167,151);}
+a.logo1:visited{color:rgb(27,167,151);}
+a.logo1:hover{color:rgb(27,167,151);}
+a.logo1:active{color:rgb(27,167,151);}
+/*搜索栏*/
+.search{
+}
