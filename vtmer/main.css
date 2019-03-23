@@ -29,7 +29,6 @@ a.top:active{color:rgb(27,167,151);}
     margin-top:40px;
     float:left;
     display:inline;
-    margin-bottom:40px;
    
 }
 a.logo:link{text-decoration:none;color:#000000;}
@@ -40,6 +39,48 @@ a.logo1:link{text-decoration:none;color:rgbrgb(27,167,151);}
 a.logo1:visited{color:rgb(27,167,151);}
 a.logo1:hover{color:rgb(27,167,151);}
 a.logo1:active{color:rgb(27,167,151);}
+.overflow
+{
+    clear:both;
+}
 /*搜索栏*/
-.search{
+.bot1{
+    display:inline;
+    text-decoration:none;
+    color:#ffffff;
+    position:relative;
+    left:280px;
+    top:200px;  
+}
+.text1{
+    padding:12px;
+    display:inline;
+    position:relative;
+    left:389px;
+    top:164px;
+}
+.bot2{
+    display:inline;
+    text-decoration:none;
+    color:#ffffff;
+    position:relative;
+    left:280px;
+    top:200px;  
+}
+.text2{
+    padding:12px;
+    display:inline;
+    position:relative;
+    left:389px;
+    top:164px;
+}
+a.search:link{text-decoration:none;color:#ffffff;}
+a.search:visited{color:#ffffff;}
+a.search:hover{color:rgb(61,61,61);}
+a.search:active{color:rgb(61,61,61);}
+.searchtxt{
+    position:relative;
+    left:280px;
+    top:175px;
+    color:#ffffff;
 }

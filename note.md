@@ -19,6 +19,15 @@
 >       * ***背景内容：透明***
 >3. 大致完成考核任务切图
 >4. 导航条制作
+---
+##date(2019-03-23)
+>1. 制作网页顶部
+>       * vertical-align:middle 行内元素的基线相对于该元素所在行的基线的垂直对齐
+>       * text-decoration:none 去掉下划线
+>2. 制作中间搜索框
+>       * 搜索栏定位要先设置position:relative再移位，否则背景会跟着一起动
+>       * 同行文字和图片对齐vertical-align:middle
+>       * placeholder=""为文本框添加提示内容
 
 
     
