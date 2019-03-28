@@ -6,7 +6,38 @@
     <title>VTMER</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-    <script src="main.js"></script>
+    <script type="text/javascript">
+        function change_div(id){
+            if (id == 'div1' )
+        {
+            document.getElementById("div1").style.display = 'inline-block' ;
+            document.getElementById("div2").style.display = 'none' ;
+            document.getElementById("div3").style.display = 'none' ;
+            document.getElementById("div4").style.display = 'none' ;
+        }
+        else if (id == 'div2')
+        {
+            document.getElementById("div2").style.display = 'inline-block' ;
+            document.getElementById("div1").style.display = 'none' ;
+            document.getElementById("div3").style.display = 'none' ;
+            document.getElementById("div4").style.display = 'none' ;
+        }
+        else if (id == 'div3')
+        {
+            document.getElementById("div3").style.display = 'inline-block' ;
+            document.getElementById("div1").style.display = 'none' ;
+            document.getElementById("div2").style.display = 'none' ;
+            document.getElementById("div4").style.display = 'none' ;
+        }
+        else if (id == 'div4')
+        {
+            document.getElementById("div7").style.display = 'inline-block' ;
+            document.getElementById("div1").style.display = 'none' ;
+            document.getElementById("div2").style.display = 'none' ;
+            document.getElementById("div3").style.display = 'none' ;
+        }
+        }
+    </script>
 </head>
 <body>
     <!--顶部-->
@@ -54,12 +85,99 @@
     <p id="zixun"><b>/更多资讯/</b></p>
     <div class="zixundiv">
     <ul class="ulz">
-        <li><a class="li a" href="#keji"><b>尖端科技</b></a></li>
-        <li><a class="li a" href="#yantao"><b>网络研讨会</b></a></li>
-        <li><a class="li a" href="#zixun"><b>食药咨询</b></a></li>
-        <li><a class="li a" href="#yingyong"><b>最新应用</b></a></li>
+        <li><a class="li a" href="#keji" onclick="change_div('div1')"><b>尖端科技</b></a></li>
+        <li><a class="li a" href="#yantao" onclick="change_div('div2')"><b>网络研讨会</b></a></li>
+        <li><a class="li a" href="#zixun" onclick="change_div('div3')"><b>食药咨询</b></a></li>
+        <li><a class="li a" href="#yingyong" onclick="change_div('div4')"><b>最新应用</b></a></li>
     </ul>
-    <div class="message">
+    <div id="div1" class="message">
+        <div class="message1">
+            <div class="message1img"><img src="message1.png"></div>
+            <span class="message1txt">XTrac智能液体萃取平台可用于固体、
+                液体中目标位置的自动提取，过滤试验可用于农业、烟草、化学、食品、制药等行业。</span>
+            <span class="XTrac"><a href="Xtrac" class="liaojie1"><br>了解更多</br></a></span>    
+        </div>
+        <div class="message2">
+                <div class="message2img"><img src="message2.png"></div>
+                <span class="message2txt">GraviTrac智能称量平台可用于大批量的称重、
+                    恒重实验，可用于制药、农业、烟草、化工、食品、制药等行业。
+                </span>
+                <span class="GTrac"><a href="Gtrac" class="liaojie2"><br>了解更多</br></a></span>    
+        </div>
+        <div class="message3">
+                <div class="message3img"><img src="message3.png"></div>
+                <span class="message3txt">MultiTasker智能多功能样品制备平台用于前处理样品的制备，
+                    可自动完成液体化的处理，标样的制备、提取、过滤等实验，可用于制药、食品、农业、化学等行业。
+                </span>
+                <span class="MTasker"><a href="MTasker" class="liaojie3"><br>了解更多</br></a></span>    
+        </div>
+        <div class="message4">
+                <div class="message4img"><img src="message4.png"></div>
+                <span class="message4txt">MultiTasker智能多功能样品制备平台用于前处理样品的制备，
+                    可自动完成液体化的处理，标样的制备、提取、过滤等实验，可用于制药、食品、农业、化学等行业。
+                </span>
+                <span class="GTPlus"><a href="GTPlus" class="liaojie4"><br>了解更多</br></a></span>    
+        </div>
+    </div>
+    <div id="div2" class="message">
+        <div class="message1">
+            <div class="message1img"><img src="message1.png"></div>
+            <span class="message1txt">XTrac智能液体萃取平台可用于固体、
+                液体中目标位置的自动提取，过滤试验可用于农业、烟草、化学、食品、制药等行业。</span>
+            <span class="XTrac"><a href="Xtrac" class="liaojie1"><br>了解更多</br></a></span>    
+        </div>
+        <div class="message2">
+                <div class="message2img"><img src="message2.png"></div>
+                <span class="message2txt">GraviTrac智能称量平台可用于大批量的称重、
+                    恒重实验，可用于制药、农业、烟草、化工、食品、制药等行业。
+                </span>
+                <span class="GTrac"><a href="Gtrac" class="liaojie2"><br>了解更多</br></a></span>    
+        </div>
+        <div class="message3">
+                <div class="message3img"><img src="message3.png"></div>
+                <span class="message3txt">MultiTasker智能多功能样品制备平台用于前处理样品的制备，
+                    可自动完成液体化的处理，标样的制备、提取、过滤等实验，可用于制药、食品、农业、化学等行业。
+                </span>
+                <span class="MTasker"><a href="MTasker" class="liaojie3"><br>了解更多</br></a></span>    
+        </div>
+        <div class="message4">
+                <div class="message4img"><img src="message4.png"></div>
+                <span class="message4txt">MultiTasker智能多功能样品制备平台用于前处理样品的制备，
+                    可自动完成液体化的处理，标样的制备、提取、过滤等实验，可用于制药、食品、农业、化学等行业。
+                </span>
+                <span class="GTPlus"><a href="GTPlus" class="liaojie4"><br>了解更多</br></a></span>    
+        </div>
+    </div>
+    <div id="div3" class="message">
+        <div class="message1">
+            <div class="message1img"><img src="message1.png"></div>
+            <span class="message1txt">XTrac智能液体萃取平台可用于固体、
+                液体中目标位置的自动提取，过滤试验可用于农业、烟草、化学、食品、制药等行业。</span>
+            <span class="XTrac"><a href="Xtrac" class="liaojie1"><br>了解更多</br></a></span>    
+        </div>
+        <div class="message2">
+                <div class="message2img"><img src="message2.png"></div>
+                <span class="message2txt">GraviTrac智能称量平台可用于大批量的称重、
+                    恒重实验，可用于制药、农业、烟草、化工、食品、制药等行业。
+                </span>
+                <span class="GTrac"><a href="Gtrac" class="liaojie2"><br>了解更多</br></a></span>    
+        </div>
+        <div class="message3">
+                <div class="message3img"><img src="message3.png"></div>
+                <span class="message3txt">MultiTasker智能多功能样品制备平台用于前处理样品的制备，
+                    可自动完成液体化的处理，标样的制备、提取、过滤等实验，可用于制药、食品、农业、化学等行业。
+                </span>
+                <span class="MTasker"><a href="MTasker" class="liaojie3"><br>了解更多</br></a></span>    
+        </div>
+        <div class="message4">
+                <div class="message4img"><img src="message4.png"></div>
+                <span class="message4txt">MultiTasker智能多功能样品制备平台用于前处理样品的制备，
+                    可自动完成液体化的处理，标样的制备、提取、过滤等实验，可用于制药、食品、农业、化学等行业。
+                </span>
+                <span class="GTPlus"><a href="GTPlus" class="liaojie4"><br>了解更多</br></a></span>    
+        </div>
+    </div>
+    <div id="div4" class="message">
         <div class="message1">
             <div class="message1img"><img src="message1.png"></div>
             <span class="message1txt">XTrac智能液体萃取平台可用于固体、

@@ -137,8 +137,19 @@ li a:active{
     background-color:#ffffff;
     color:rgb(61,61,61);
 }
-.message{
+#div1{
     display:inline-block;
+}
+#div2{
+    display:none;
+}
+#div3{
+    display:none;
+}
+#div4{
+    display:none;
+}
+.message{
     width:920px;
     height:320px;
     border:2px solid rgb(198,198,198);
