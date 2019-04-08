@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>VTMER</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="jdt.css">
+</head>
+<body id="back">
+    <div id="warpper">
+        <div id="loading">
+            <div id="load-container">
+            </div>
+        </div>
+        <div id="number">
+           0%
+        </div>
+    </div>
+    <script>
+         var i = 0;
+        var one=document.getElementById("load-container");
+        var two=document.getElementById("number");
+        var load=setInterval(function(){
+            if(i<=100){
+                one.style.width=i+"%";
+                two.innerHTML=i+"%"; 
+                i++;
+            }    
+        },50)
+                if(i>=25&&i<50){
+                one.style.backgroundColor="rgb(245, 224, 130)";
+                two.style.color="rgb(245, 224, 130)";
+            }
+                else if(i>=50&&i<75){
+                one.style.backgroundColor="rgb(121, 181, 250)";
+                two.style.color="rgb(121, 181, 250)"
+            }
+                else if(i>=75&&i<100){
+                one.style.backgroundColor="rgb(121, 250, 228)";
+                two.style.color="rgb(121, 250, 228)"
+            }
+                else if(i=100){
+                two.innerHTML="加载完成"
+                two.style.color="rgb(27,167,151)"
+            }
+    </script>
+        
+</body>
+</html>
