@@ -18,32 +18,31 @@
         </div>
     </div>
     <script>
-         var i = 0;
+        i = 0;
         var one=document.getElementById("load-container");
         var two=document.getElementById("number");
         var load=setInterval(function(){
-            if(i<=100){
-                one.style.width=i+"%";
-                two.innerHTML=i+"%"; 
+            var j=i;
+                one.style.width=j+"%";
+                two.innerHTML=j+"%";
                 i++;
-            }    
-        },50)
-                /*if(i>=25&&i<50){
+                if(j>=25 && j<50){
                 one.style.backgroundColor="rgb(245, 224, 130)";
                 two.style.color="rgb(245, 224, 130)";
             }
-                else if(i>=50&&i<75){
+               if(j>=50 && j<75){
                 one.style.backgroundColor="rgb(121, 181, 250)";
                 two.style.color="rgb(121, 181, 250)"
             }
-                else if(i>=75&&i<100){
+                if(j>=75 && j<100){
                 one.style.backgroundColor="rgb(121, 250, 228)";
                 two.style.color="rgb(121, 250, 228)"
             }
-                else if(i=100){
+                if(j>=100)  {
+                clearInterval(load);
                 two.innerHTML="加载完成"
-                two.style.color="rgb(27,167,151)"
-            }*/
+            }          
+        },50)
     </script>
         
 </body>
