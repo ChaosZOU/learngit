@@ -22,7 +22,7 @@
 .search {
     display: inline-block;
     background-color: rgb(255,255,255);
-    width: 300px;
+    width: 15%;
     height: 30px;
     transform: translate(-50%,-50%);
     border: 0.5px solid rgb(218,218,218); 
@@ -35,7 +35,7 @@
 .search-box {
     line-height: 30px;
     height: 30px; 
-    width: 220px;
+    width: 70%;
     border: none;
     outline: medium;
     position: relative;
@@ -43,10 +43,9 @@
     display: inline-block;
 }
 .search-img {
-    width: 18px;
-    height: 18px;
+    width: 10%;
+    height: 30px;
     position: relative;
-    left: 42px;
     top: 6px;
 }
 /*搜索栏*/
