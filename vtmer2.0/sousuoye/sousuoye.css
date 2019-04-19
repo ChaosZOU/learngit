@@ -4,17 +4,13 @@
 }
 .bottom {
     background-color: rgb(244,244,244); 
-    overflow-y: scroll;
-
-}
+}   
 .head {
     z-index: 2;
     width: 100%;
     height: 50px;
     background-color: rgb(244,244,244);
-    box-shadow: 4px 4px 10px grey;
-    position: relative;
-   
+    box-shadow: 4px 4px 10px grey;  
 }
 .logo {
     display: inline-block;
@@ -29,8 +25,7 @@
     width: 300px;
     height: 30px;
     transform: translate(-50%,-50%);
-    border: 0.5px solid rgb(218,218,218);
-    box-shadow: 4px 4px 10px rgb(218,218,218);
+    border: 0.5px solid rgb(218,218,218); 
     border-radius: 15px;
     position: relative;
     left: 45%;
@@ -62,30 +57,33 @@
     color: rgb(109,107,77);
     width: 85px;
     height: 30px;
-    border: none;
     cursor: pointer;
     border: 0.5px solid rgb(109,107,77);
+    text-align:center;
 }
 
 .dropdown {
-    position: relative;
-    left: 50%;
-    top:-4px;
+    position: absolute;
+    left: 70%;
+    top: 6px;
     display: inline-block;
     z-index: 2;
 }
 
 .dropdown-content { 
-    display: none;
     position: absolute;
     background-color: rgb(220,215,157);
     min-width: 85px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    height: 0;
+    overflow: hidden;
+    transition: 1s;
+
 }
 
 .dropdown-content a {
     color: rgb(109,107,77);
-    padding: 5px;
+    height:30px;
+    line-height: 30px;
     text-align: center;
     text-decoration: none;
     display: block;
@@ -95,6 +93,8 @@
 
 .dropdown:hover .dropdown-content {
     display: block;
+    height: 120px;
+
 }
 
 .dropdown:hover .dropbtn {
@@ -106,13 +106,17 @@
 .background {
     z-index: 1;
     width: 100%; 
+    height: 235.6px;
     position: relative;
+    
     
     
 }
 .background-img {
     width: 100%;
     height: 235.6px;
+    position:relative;
+    box-shadow: -4px -4px 10px rgb(218,218,218) inset;
 }
 .background-text {
     background-color: rgb(220,215,157);
@@ -124,13 +128,107 @@
     text-align: center;
     line-height: 30px;
     height: 30px;
+    width: 100px;
 }
 
 /*内容*/
 .warp {
     width: 80%;
-    height: 800px;
-    margin: 0 10% 0 10%;
+    height: 1500px;
+    margin: 0 10% 100px 10%;
     background-color: #ffffff;
 }
+.container{
+    width: 80%;
+    height: 1200px;
+    padding: 100px 10% 100px 10%;
+
+}
+.content1 {
+    width: 25%;
+    height:600px;
+    float: left;
+    padding: auto;
+    padding-bottom: 50px;
+}
+.content1-img {
+    width:90%;
+    height: 400px;
+    padding: auto;
+}
+.content1-text1 {
+    width:90%;
+    height: 50px;
+    padding: auto;
+    text-align: center;
+}
+.content1-text2 {
+    width:90%;
+    height:50px;
+    padding: auto;
+    text-align: center;
+}
+.content1-text3 {
+    width:90%;
+    height: 50px;
+    padding: auto;
+    text-align: center;
+}
+.content1-text4 {
+    width:200px;
+    padding: 0px 25px;
+    text-align: center;
+    color: rgb(224,224,224);
+}
 /*内容*/
+.container2 {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    
+}
+.prev {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    color: rgb(61,61,61);
+    text-align: center;
+    text-decoration: none;
+    float: left; 
+}
+.container2 .buttons{
+   width: 150;
+   height: 30px;
+   float: left;
+}
+.container2 .buttons span{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    background-color:  #ffffff;
+    text-align: center;
+    color: rgb(61,61,61);
+    cursor: pointer;
+}
+.container2 .buttons span.on{
+    background-color: rgb(61,61,61);
+    color: #ffffff;
+}
+.next {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: rgb(61,61,61);
+    text-decoration: none;
+    float: left; 
+}
+.page-text {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    padding: auto;
+}
